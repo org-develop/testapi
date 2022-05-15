@@ -13,17 +13,54 @@
           rel="stylesheet" media="screen" />
     <script src="/webjars/jquery/jquery.min.js"
             th:src="@{/webjars/jquery/jquery.min.js}"></script>
+    <script src="/webjars/jquery/jquery.min.js"
+            th:src="@{/webjars/bootstrap/js/bootstrap.bundle.min.js}"></script>
+
+
+    <link th:href="@{/css/style.css}" rel="stylesheet" />
+    <script type="text/javascript" th:src="@{/js/menu.js}"></script>
+
 </head>
 <body>
-<!-- Header -->
-<div th:replace="fragments/header :: header"></div>
-<div class="container">
-    <div layout:fragment="content">
-        <p>Content goes here...</p>
-    </div>
-    <footer>
-        <div th:replace="fragments/footer :: footer" />
-    </footer>
-</div>
+    <div th:replace="fragments/header :: header"></div>
+
+    <!-- Bootstrap row -->
+    <div class="row" id="body-row">
+        <!-- Sidebar -->
+        <div id="sidebar-container" class="sidebar-expanded d-none d-md-block">
+            <!-- Bootstrap List Group -->
+            <ul class="list-group">
+                <!-- Separator with title -->
+                <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center menu-collapsed">
+                    <small>Online Reports</small>
+                </li>
+                <!-- /END Separator -->
+                <!-- Menu with submenu -->
+
+                <a href="#" class="bg-dark list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="fa fa-tasks fa-fw mr-3"></span>
+                        <span class="menu-collapsed">Tasks</span>
+                    </div>
+                </a>
+                <!-- Separator with title -->
+<!--                <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center menu-collapsed">-->
+<!--                    <small>OPTIONS</small>-->
+<!--                </li>-->
+                <!-- /END Separator -->
+
+
+            </ul><!-- List Group END-->
+        </div><!-- sidebar-container END -->
+
+        <div layout:fragment="content">
+            <p>Content goes here...</p>
+        </div>
+
+    </div><!-- body-row END -->
+
+<footer>
+    <div th:replace="fragments/footer :: footer" />
+</footer>
 </body>
 </html>
