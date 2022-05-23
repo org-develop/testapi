@@ -1,0 +1,13 @@
+2022-04-20 10:07:48 INFO  MyLogger:58 - Logger is initialized..
+2022-04-20 10:07:49 INFO  MyLogger:19 - Reporting started.
+2022-04-20 10:07:49 INFO  MyLogger:30 - testToFetchFirstName started!
+2022-04-20 10:07:50 INFO  MyLogger:43 - testToFetchFirstName failed!
+2022-04-20 10:07:50 INFO  MyLogger:30 - testTocheckStatus started!
+2022-04-20 10:07:51 INFO  MyLogger:37 - testTocheckStatus passed!
+2022-04-20 10:07:51 INFO  MyLogger:24 - Reporting finished.
+2022-04-20 10:07:51 INFO  MyLogger:19 - Reporting started.
+2022-04-20 10:07:51 INFO  MyLogger:30 - testToFetchFirstName started!
+2022-04-20 10:07:51 INFO  MyLogger:43 - testToFetchFirstName failed!
+2022-04-20 10:07:51 INFO  MyLogger:30 - testTocheckStatus started!
+2022-04-20 10:07:51 INFO  MyLogger:37 - testTocheckStatus passed!
+2022-04-20 10:07:51 INFO  MyLogger:24 - Reporting finished.
